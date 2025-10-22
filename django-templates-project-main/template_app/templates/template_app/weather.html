@@ -26,13 +26,27 @@
 
     
     <br>
+    
+    <br>
+
+
+
+    {% if  user_premium %}
     <ul>
     {% for item in paris %}
+    {% if item < 6 %}
+    <h2><li>paris:too cold</li></h2>
+    {% else %}
+    <h2><li>paris:{{ item }}</li></h2>
+    {% endif %}
+
     <li>{{ item }}</li>
 
     
     {% endfor %}
     </ul>
+    
+    {% endif %}
 
 
 

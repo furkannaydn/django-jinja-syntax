@@ -13,7 +13,8 @@ def weather(request):
         "city":"Istanbul",
         "temperature":30,
         "condition":"Sunny",
-        "paris":[20,12,65,34],
-        "rome":{"morning":22,"noon":28,"night":18}
+        "paris":[5,12,65,34],
+        "rome":{"morning":22,"noon":28,"night":18},
+        "user_premium":True,
     }
     return render(request,"template_app/weather.html", context=weather_dictonary)
